@@ -1,0 +1,154 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body with gradient background for glassmorphism effect */
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #02bbbb, #00464b);
+}
+
+/* Main container with glassmorphism styling */
+.container {
+    position: relative;
+    max-width: 800px; /* Increased max-width for better layout */
+    width: 100%;
+    /* Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: #f0f0f0; /* Light text for contrast */
+}
+
+.container header {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px; /* Adjusted margin */
+}
+
+.form .input-box input,
+.form .select-box select,
+.form textarea {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    border-radius: 8px;
+    padding: 0 15px;
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+}
+
+.form .input-box input:focus,
+.form .select-box select:focus,
+.form textarea:focus {
+    border-color: #00ffff;
+    background-color: #fff;
+}
+
+.form textarea {
+    height: 120px;
+    padding-top: 15px;
+    resize: none;
+}
+
+.form .column {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; /* Use gap for spacing */
+}
+
+.form .column .input-box,
+.form .column .select-box {
+    flex: 1 1 calc(50% - 10px); /* Use calc for precise equal width */
+}
+
+.input-box.file-upload-box label {
+    display: block;
+}
+
+.input-box input[type="file"] {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Style for file input button */
+.input-box input[type="file"]::-webkit-file-upload-button {
+    border: none;
+    background: #00464b;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.input-box input[type="file"]::-webkit-file-upload-button:hover {
+    background: #00ffff;
+    color: #00464b;
+}
+
+
+.form button {
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #00464b;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form button:hover {
+    background: #00ffff;
+    color: #00464b;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .form .column .input-box,
+    .form .column .select-box {
+        flex-basis: 100%; /* Stack elements on small screens */
+    }
+}

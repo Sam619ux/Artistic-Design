@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Artistic Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/logo/Group 6.svg" class="Logo" alt="Logo">
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="#">Home</a>
+            <a href="#prices">Prices</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="#">About</a>
+        </nav>
+        <div class="btn-outter">
+            <div class="btn">
+                <a href="/form.html"><span>CUSTOMIZE</span></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="/video/liquid.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+        </video>
+    
+        <div class="hero-content">
+            <div class="hero-left">
+                <img class="img-l" src="/images/logo/Group 5.svg" alt="Cyan Logo" />
+                <p class="para">
+                    It is the <span class="para-inner">destiny</span> where you can turn your <span class="para-inner">creativity</span> into life in the form of <span class="para-inner">art</span>.
+                </p>
+            </div>
+            <div class="hero-right">
+                <img class="img" src="/images/herosec/Portraits.png" alt="Hero Portrait" />
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="section-heading">Our Services</h1>
+        <div class="row">
+            
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-pencil"></i></div>
+                    <h3>Pencil Art</h3>
+                    <p>Graphite and charcoal pencil drawings with a highly realistic touch.</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Colour Pencil</h3>
+                    <p>Colorful, lively illustrations great for gifting and personalized moments.</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-pen-to-square"></i></div>
+                    <h3>Oil Pastel</h3>
+                    <p>Smooth blends and vibrant shades ideal for walls and creative décor.</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-fill-drip"></i></div>
+                    <h3>Modern Art</h3>
+                    <p>Bold, aesthetic artworks that express emotion and look gallery-worthy.</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-paintbrush"></i></div>
+                    <h3>Painting</h3>
+                    <p>Classic, timeless paintings that elevate ambiance and personal spaces.</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3>Digital Art</h3>
+                    <p>Clean, versatile styles like vector, anime, and portraits made digitally.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <h1 class="gallery-heading">Gallery</h1>
+    <div class="gallery-container">
+        <div class="gallery-item" data-index="0">
+            <img src="/images/gallery/art2.jpg" alt="Art 1">
+        </div>
+        <div class="gallery-item" data-index="1">
+            <img src="/images/gallery/art3.jpg" alt="Art 2">
+        </div>
+        <div class="gallery-item" data-index="2">
+            <img src="/images/gallery/vj.jpg" alt="Art 3">
+        </div>
+        <div class="gallery-item" data-index="3">
+            <img src="/images/gallery/art4.jpg" alt="Art 4">
+        </div>
+        <div class="gallery-item" data-index="4">
+            <img src="/images/gallery/art5.jpg" alt="Art 5">
+        </div>
+        <div class="gallery-item" data-index="5">
+            <img src="/images/gallery/naruto.jpg" alt="Art 6">
+        </div>
+    </div>
+    <div class="down"></div>
+
+    <div class="price-outter">
+        <h1 class="price-heading" id="prices">Price list</h1>
+        <div class="main">
+            <div class="box one box-one">
+                <div class="top">
+                    <p>Basic</p>
+                </div>
+                <div class="price-bubble"><label><span>₹</span>499</label></div>
+                <div class="mid">
+                    <p style="font-weight: 600;">Suitable for personal collection</p>
+                    <p><i class="fa fa-check"></i> Photo realistic</p>
+                    <p><i class="fa fa-check"></i> Requires less time</p>
+                    <p><i class="fa fa-times"></i> Frame unavailable</p>
+                    <p><i class="fa fa-times"></i> Gift wrap unavailable</p>
+                    <p><i class="fa fa-times"></i> Revision unavailable</p>
+                    <p><i class="fa fa-times"></i> No premium delivery</p>
+                </div>
+                <a href="/form.html"><button>Customize</button></a>
+            </div>
+    
+            <div class="box two box-two">
+                <div class="top">
+                    <p>Standard</p>
+                </div>
+                <div class="price-bubble"><label><span>₹</span>999</label></div>
+                <div class="mid">
+                    <p style="font-weight: 600;">Suitable for gifts</p>
+                    <p><i class="fa fa-check"></i> Photo realistic</p>
+                    <p><i class="fa fa-check"></i> Requires less time</p>
+                    <p><i class="fa fa-check"></i> Frame available</p>
+                    <p><i class="fa fa-check"></i> Single revision</p>
+                    <p><i class="fa fa-times"></i> Gift wrap unavailable</p>
+                    <p><i class="fa fa-times"></i> No premium delivery</p>
+                </div>
+                <a href="/form.html"><button>Customize</button></a>
+            </div>
+    
+            <div class="box three box-three">
+                <div class="top">
+                    <p>Premium</p>
+                </div>
+                <div class="price-bubble"><label><span>₹</span>2499</label></div>
+                <div class="mid">
+                    <p style="font-weight: 600;">Suitable for special occasions</p>
+                    <p><i class="fa fa-check"></i> Hyper realistic</p>
+                    <p><i class="fa fa-check"></i> Frame available</p>
+                    <p><i class="fa fa-check"></i> Gift wrap available</p>
+                    <p><i class="fa fa-check"></i> Multiple revisions</p>
+                    <p><i class="fa fa-check"></i> Premium delivery</p>
+                    <p><i class="fa fa-times"></i> Requires more time</p>
+                </div>
+                <a href="/form.html"><button>Customize</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial-section">
+        <h1 class="feedback-heading">Feedback</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img src="images/testimoni-img/1.png" alt="Profile picture of Satya Nadella">
+                        <h3>Yuvaraj</h3>
+                        <h4>Happy Customer</h4>
+                        <p>very nice and safe delivery, they care about their responsibilities on point</p>
+                        <div class="review-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>                     
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img src="images/testimoni-img/2.png" alt="Profile picture of Safra Catz">
+                        <h3>Thanush</h3>
+                        <h4>Happy Customer</h4>
+                        <p>the frame quality is very nice and looks pretty, it can long last for years</p>
+                        <div class="review-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img src="images/testimoni-img/3.png" alt="Profile picture of Mark Zuckerberg">
+                        <h3>Vinoth</h3>
+                        <h4>Happy Customer</h4>
+                        <p>this website is very useful for those who love to customize their art</p>
+                        <div class="review-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img src="images/testimoni-img/4.png" alt="Profile picture of Mark Zuckerberg">
+                        <h3>Surya</h3>
+                        <h4>Happy Customer</h4>
+                        <p>Absolutely wonderful service! The designs exceeded my expectations.</p>
+                        <div class="review-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img src="images/testimoni-img/5.png" alt="Profile picture of Mark Zuckerberg">
+                        <h3>Deepak</h3>
+                        <h4>Happy Customer</h4>
+                        <p>very nice and safe delivery, they care about their responsibilities on point</p>
+                        <div class="review-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img src="images/testimoni-img/6.png" alt="Profile picture of Mark Zuckerberg">
+                        <h3>Abhishek</h3>
+                        <h4>Happy Customer</h4>
+                        <p>Absolutely wonderful service! The designs exceeded my expectations.</p>
+                        <div class="review-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+
+        <div class="arrow left arrow-left"><i class="fas fa-arrow-left"></i></div>
+        <div class="arrow right arrow-right"><i class="fas fa-arrow-right"></i></div>
+    
+        
+    </div>
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li><img class="icon" src="/images/icons/facebook.png" alt="facebook"></li>
+            <li><img class="icon" src="/images/icons/instagram.png" alt="instagram"></li>
+            <li><img class="icon" src="/images/icons/twitter.png" alt="twitter" ></li>
+            <li><img class="icon" src="/images/icons/whatsapp.png" alt="whatsapp"></li>
+        </ul>
+
+        <nav class="navbar">
+            <a href="">Home</a>
+            <a href="#services">Services</a>
+            <a href="/contact.html">Contact</a>
+            <a href="">About</a>
+        </nav>
+        <p class="copyright">©2024 Artistic Design by <span class="end"> PAUL SAM RAJ </span>| All Rights Reserved</p>
+
+    </footer> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
