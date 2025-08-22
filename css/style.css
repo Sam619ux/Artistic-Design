@@ -272,7 +272,7 @@ body::-webkit-scrollbar-thumb {
     height: auto;
 }
 .para {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
     color: rgb(0, 0, 0);
     line-height: 1.5;
@@ -968,6 +968,7 @@ h4 {
         margin-top: -70px;
     }
 }
+
 
 
 
