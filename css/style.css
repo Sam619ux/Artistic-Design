@@ -160,6 +160,11 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
+        position: absolute;
+        padding-bottom: 10px;
+        right: 20px;
+        top: 16px;
+    
     }
     .navbar {
         display: none;
@@ -199,15 +204,26 @@ body::-webkit-scrollbar-thumb {
         flex-grow: 1;
     }
     .logo-container img {
-        width: 200px;
+        width: 170px;
         margin-left: 0;
     }
     .btn-outter {
         margin-left: 0;
-        margin-right: 50px;
+        margin-right: 30px;
+        width: min-content;
+        height: min-content;
+        
     }
     .btn a {
-        width: 120px;  
+        width: 80px; 
+        height: 30px; 
+        padding-bottom: 5px;
+        font-size: 5px;
+        align-items: center;
+    }
+    .btn a span {
+        font-size: 12px;
+        line-height: 30px;
     }
 }
 /* Header End */
@@ -236,16 +252,14 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* 
-    padding: 40px 5%;
-    padding-top: 0;
-    padding-left: 0;
-    gap: 60px;
+    justify-content: space-between;
     width: 100%;
-    height: 100%;
     max-width: 1200px;
-    flex-wrap: wrap;
-    z-index: 1; */
+    padding: 0 20px;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+    
 }
 .hero-left {
     flex: 1 1 300px;
@@ -293,23 +307,24 @@ body::-webkit-scrollbar-thumb {
         flex: 1 1 100%;
     }
     .img-l {
-        margin-top: 0px;
         max-width: 300px;
-        margin-left: 0px;
-        margin-top: 0px;
-        padding-top: 0%;
+        max-width: min-content;
+        margin-left: 0;
     }
     .img {
-        max-width: 140px;
-        margin-top: 0px;
-        margin-left: 80px;
+        max-width: 300px;
+        margin-top: 20px;
+        margin-left: 40px;
     }
     .para {
-        font-size: 18px;
+        font-size: 25px;
         padding: 0 20px;
-        display: inline-block;
-        padding: 0 20px;
-    
+        margin-top: 20px;
+
+    }
+    .hero-section{
+        height: auto;
+        padding: 20px 0;
     }
 }
 @media (max-width: 480px) {
@@ -343,13 +358,13 @@ body::-webkit-scrollbar-thumb {
 }
 .column {
     flex: 1 1 100%;
-    max-width: 100%;
+    max-width: 90%;
     padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease-in-out;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 /* .column:nth-child(2), .column:nth-child(5) {
     margin-top: 60px;
@@ -470,6 +485,7 @@ body::-webkit-scrollbar-thumb {
     pointer-events: none;
     filter: grayscale(100%);
     transition: filter 0.5s ease-in-out;
+    border-radius: 12px;
 }
 .gallery-item.active img {
     filter: grayscale(0%);
@@ -524,14 +540,14 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 768px) {
     .gallery-container {
         height: 300px;
-        max-width: 500px;
+        max-width: 400px;
     }
     .gallery-item {
         width: 150px;
         height: 225px;
     }
-    .gallery-item.next { transform: translateX(160px) scale(0.9); }
-    .gallery-item.prev { transform: translateX(-160px) scale(0.9); }
+    .gallery-item.next { transform: translateX(90px) scale(0.9); }
+    .gallery-item.prev { transform: translateX(-90px) scale(0.9); }
     .gallery-item.far-next, .gallery-item.far-prev {
         display: none;
     }
@@ -898,7 +914,7 @@ h3 {
 h4 {
     font-size: 12px;
     margin-top: 5px;
-    color: #00464b;
+    color: #0096FF;
     font-weight: normal;
 }
 
@@ -946,6 +962,6 @@ h4 {
     .testimonial-card img {
         width: 80px;
         height: 80px;
-        margin-top: -70px; /* Adjusted for better positioning */
+        margin-top: -70px;
     }
 }
