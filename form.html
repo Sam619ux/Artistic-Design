@@ -54,7 +54,7 @@
         }
 
         .bottom-left {
-           display: none; /* This line hides the bottom circle */
+            display: none; /* This line hides the bottom circle */
         }
 
 
@@ -123,6 +123,11 @@
             transition: border-color 0.3s, background-color 0.3s;
         }
 
+        /* Specifically target select elements to increase padding right for the arrow */
+        .form select.input-field {
+            padding-right: 40px; 
+        }
+
         .form .input-field:focus {
             border-color: #00ffff;
             background-color: #fff;
@@ -182,6 +187,7 @@
             .form .input-group {
                 /* Stack elements into a single column on small screens */
                 flex-basis: 100%; 
+                flex: 1 1 100%;
             }
             .deco-circle {
                 width: 300px;
@@ -194,6 +200,17 @@
             .bottom-left {
                 bottom: -100px;
                 left: -100px;
+            }
+            section header{
+                font-size: 28px !important;
+            }
+            .input-field {
+                height: 45px;
+                font-size: 0.9rem;
+            }
+            /* Remove the specific padding right on mobile for better layout */
+            .form select.input-field {
+                padding-right: 15px;
             }
         }
     </style>
@@ -266,7 +283,8 @@
                     <input type="file" id="file-upload" class="input-field" />
                 </div>
                 <div class="input-group">
-                    <label for="gift-wrap">Gift wrap</label>                    <select id="gift-wrap" class="input-field">
+                    <label for="gift-wrap">Gift wrap</label>
+                    <select id="gift-wrap" class="input-field">
                         <option>None</option>
                         <option>Normal Wrap</option>
                         <option>Special Wrap</option>
@@ -274,7 +292,7 @@
                 </div>
             </div>
             <div class="form-row">
-                 <div class="input-group" style="flex-basis: 100%;">
+                <div class="input-group" style="flex-basis: 100%;">
                     <label for="address">Address</label>
                     <input type="text" id="address" class="input-field" placeholder="Enter street address" required />
                 </div>
