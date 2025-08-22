@@ -508,8 +508,8 @@ body::-webkit-scrollbar-thumb {
 }
 .gallery-item.next { transform: translateX(220px) scale(0.9); }
 .gallery-item.prev { transform: translateX(-220px) scale(0.9); }
-.gallery-item.far-next { transform: translateX(440px) scale(0.7); }
-.gallery-item.far-prev { transform: translateX(-440px) scale(0.7); }
+.gallery-item.far-next { transform: translateX(390px) scale(0.7); }
+.gallery-item.far-prev { transform: translateX(-390px) scale(0.7); }
 
 .gallery-item.hidden {
     opacity: 0;
@@ -965,3 +965,4 @@ h4 {
         margin-top: -70px;
     }
 }
+
